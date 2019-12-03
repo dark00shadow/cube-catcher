@@ -10,3 +10,8 @@ and the cmd will put out the numbers when you get new point and it will show you
 
 
 controls ares left and right arrow keys 
+
+# update 1 
+
+added something so u cant get out of the screen
+
