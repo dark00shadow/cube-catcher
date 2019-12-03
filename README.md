@@ -15,3 +15,6 @@ controls ares left and right arrow keys
 
 added something so u cant get out of the screen
 
+# update 2
+
+changed name to cube catcher
