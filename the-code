@@ -37,6 +37,8 @@ points = 0
 
 
 
+
+
 while not game_over:
 
     for event in pygame.event.get():
@@ -74,8 +76,14 @@ while not game_over:
         enemy_pos[0] = random.randint(0, width - enemy_size)
         print(points)
 
+    
+    if player_pos[0] == -50:
+        player_pos[0] += player_size
 
+    if player_pos[0] == 800:
+        player_pos[0] -= player_size
 
     clock.tick(30)
 
     pygame.display.update()
+
