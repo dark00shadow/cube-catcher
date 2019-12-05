@@ -1,7 +1,7 @@
 # cube catcher
 
 
-the c.zip is the game 
+the .zip is the game 
 and the code.txt is the code 
 
 and when you download the .zip it tells you what to do from there
