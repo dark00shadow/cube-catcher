@@ -1,7 +1,7 @@
 # cube catcher
 
 
-the cube war.zip is the game 
+the c.zip is the game 
 and the code.txt is the code 
 
 and when you download the .zip it tells you what to do from there
@@ -13,6 +13,19 @@ also you need python (get it via https://www.python.org/downloads/)
 
 
 controls ares left and right arrow keys 
+
+# how to install after you downloaded the .zip
+
+of course you installed this forlder but you should put it in your desktop 
+the one in OneDrive (aka the default one) cuz in step 1 to play its does OneDrive\Desktop\cubeWar\game 
+
+# how to play
+
+go in cmd and type 
+
+1 = cd OneDrive\Desktop\cubeWar\game
+
+2 = python main.py
 
 # update 1 
 
