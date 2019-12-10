@@ -27,10 +27,14 @@ go in cmd and type
 
 2 = python main.py
 
-# update 1 
+# update 2
 
 added something so u cant get out of the screen
 
-# update 2
+# update 3
 
 changed name to cube catcher
+
+# update 4
+
+changed the way the points work so instead of just te number it will als print  points:
