@@ -6,7 +6,7 @@ import pygame
 
 pygame.init()
 
-pygame.display.set_caption("cube wars")
+pygame.display.set_caption("cube catcher")
 icon = pygame.image.load('icon.png')
 pygame.display.set_icon(icon)
 
@@ -74,7 +74,7 @@ while not game_over:
         points += 1
         enemy_pos[1] = 0
         enemy_pos[0] = random.randint(0, width - enemy_size)
-        print(points)
+        print("points:", points)
 
     
     if player_pos[0] == -50:
@@ -86,4 +86,3 @@ while not game_over:
     clock.tick(30)
 
     pygame.display.update()
-
