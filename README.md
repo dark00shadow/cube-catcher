@@ -23,7 +23,7 @@ the one in OneDrive (aka the default one) cuz in step 1 to play its does OneDriv
 
 go in cmd and type 
 
-1 = cd OneDrive\Desktop\cubeWar\game
+1 = cd OneDrive\Desktop\cubeCather\game
 
 2 = python main.py
 
