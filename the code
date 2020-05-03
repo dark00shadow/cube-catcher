@@ -1,0 +1,88 @@
+import random
+import sys
+import pygame
+
+
+
+pygame.init()
+
+pygame.display.set_caption("cube catcher")
+icon = pygame.image.load('icon.png')
+pygame.display.set_icon(icon)
+
+width = 800
+height = 600
+
+RED = (255, 0, 0)
+blue = (0, 0, 254)
+colour = (32, 32, 32)
+
+player_size = 50
+player_pos = [width / 2, height - 2 * player_size]
+
+enemy_size = 50
+enemy_pos = [random.randint(0, width - enemy_size), 0]
+
+speed = 10
+
+screen = pygame.display.set_mode((width, height))
+
+game_over = False
+
+clock = pygame.time.Clock()
+
+points = 0
+
+
+
+
+
+
+
+while not game_over:
+
+    for event in pygame.event.get():
+
+        if event.type == pygame.QUIT:
+            sys.exit()
+        if event.type == pygame.KEYDOWN:
+
+            x = player_pos[0]
+            y = player_pos[1]
+
+            if event.key == pygame.K_LEFT:
+                x -= player_size
+
+            elif event.key == pygame.K_RIGHT:
+                x += player_size
+
+            player_pos = [x, y]
+
+    screen.fill(colour)
+    if enemy_pos[1] >= 0 and enemy_pos[1] < height:
+        enemy_pos[1] += speed
+    else:
+        enemy_pos[0] = random.randint(0, width - enemy_size)
+        enemy_pos[1] = 0
+
+    pygame.draw.rect(screen, blue, (enemy_pos[0], enemy_pos[1], enemy_size, 50))
+    pygame.draw.rect(screen, RED, (player_pos[0], player_pos[1], player_size, 50))
+    player_rect = pygame.Rect(*player_pos, player_size, 50)
+    enemy_rect = pygame.Rect(*enemy_pos, enemy_size, 50)
+
+    if player_rect.colliderect(enemy_rect):
+        points += 1
+        enemy_pos[1] = 0
+        enemy_pos[0] = random.randint(0, width - enemy_size)
+        print("points:", points)
+
+    
+    if player_pos[0] == -50:
+        player_pos[0] += player_size
+
+    if player_pos[0] == 800:
+        player_pos[0] -= player_size
+
+    clock.tick(30)
+
+    pygame.display.update()
