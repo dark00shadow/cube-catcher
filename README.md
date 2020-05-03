@@ -37,4 +37,9 @@ changed name to cube catcher
 
 # update 4
 
-changed the way the points work so instead of just te number it will als print  points:
+changed the way the points work so instead of just the number it will also print  points
+
+# update 5 
+
+added exe file
+
