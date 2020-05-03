@@ -2,7 +2,7 @@
 
 
 the .zip is the game 
-and the code.txt is the code 
+and the the code.txt is the code 
 
 and when you download the .zip it tells you what to do from there
 also when you downoad the .zip make sure to take out the forlder inside 
