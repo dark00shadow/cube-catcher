@@ -9,7 +9,7 @@ also when you downoad the .zip make sure to take out the forlder inside
 
 and the cmd will put out the numbers when you get new point and it will show your points 
 
-also you need python (get it via https://www.python.org/downloads/)
+also you need python (get it via https://www.python.org/downloads/ , since theres now a exe u might not need python now)
 
 
 controls ares left and right arrow keys 
